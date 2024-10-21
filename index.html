@@ -21,7 +21,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            max-width: 95%;
+            max-width: 100%;
             position: relative;
         }
 
@@ -178,6 +178,27 @@
             }
         }
 
+        @media (max-width: 2560px){
+            #select-button-label {
+                width: 35%;
+                height: 500px;
+            }
+            #container {
+                width: 50%;
+            }
+            
+        }
+        @media (max-width: 768px){
+            #select-button-label {
+                width: 95%;
+                height: 500px;
+            }
+            
+            #container {
+                width: 95%;
+            }
+        }
+
     </style>        
 </head>
 <body>
@@ -198,6 +219,7 @@
     <div id="modal">
         <div id="select-button-label">
             <span class="close">&times;</span>
+
             <div class="select-label-container">
                 <label for="numImages">Number of Pictures:</label>
                 <select id="numImages" style="background-color: #fff;">
